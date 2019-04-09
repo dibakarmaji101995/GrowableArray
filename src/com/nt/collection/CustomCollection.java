@@ -53,6 +53,19 @@ public class CustomCollection {
 		return objArray.length;
 	}
 	/**
+	 * This method is used for searching element in a collection object
+	 * @param obj
+	 * @return
+	 */
+	public boolean isAvailable(Object obj) {
+		for(int i=0;i<=size();++i) {
+			if(objArray[i]==obj) {
+				return true;
+			}
+		}//for loop
+		return false;
+	}
+	/**
 	 * This method is use to retrive an element vale based on given index number
 	 * @param indexNum
 	 * @return

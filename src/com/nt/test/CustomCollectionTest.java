@@ -1,6 +1,5 @@
 package com.nt.test;
 
-import java.awt.image.ReplicateScaleFilter;
 
 import com.nt.collection.CustomCollection;
 
@@ -42,7 +41,7 @@ public class CustomCollectionTest {
 		System.out.println("Ater replace"+custCollection.getAll());
 		System.out.println("=============================================================");
 		
-/*		//remove element by index number
+/*		//remove element by given index number
 		System.out.println("Before remove::"+custCollection.getAll());
 		//invoke remove method
 		custCollection.remove(1);
@@ -53,6 +52,11 @@ public class CustomCollectionTest {
 		//invoke insert() method
 		custCollection.insert(5,"B");
 		System.out.println("After Insert::"+custCollection.getAll());
+		
+		//searchin an element by given object
+		System.out.println("============================================================");
+		System.out.println("B element is available?? "+custCollection.isAvailable("B"));
+		System.out.println("C element is available?? "+custCollection.isAvailable("C"));
 	}
 
 }
